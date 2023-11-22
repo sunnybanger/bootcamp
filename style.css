@@ -9,6 +9,25 @@ body {
     /* Breathing background animation */
 }
 
+/* For tablets */
+@media screen and (max-width: 768px) {
+    /* Adjust styles for tablet screens */
+    header, section, footer {
+        width: 100%;
+        margin-right: 0;
+    }
+    /* Other tablet-specific styles */
+}
+
+/* For mobile devices */
+@media screen and (max-width: 480px) {
+    /* Adjust styles for mobile screens */
+    header, section, footer {
+        padding: 10px;
+    }
+    /* Other mobile-specific styles */
+}
+
 header {
     background-color: #87cefa;
     /* Light Sky Blue */
@@ -27,6 +46,7 @@ h6 {
     color: #4169e1;
     /* Royal Blue */
 }
+
 
 section {
     margin: 20px;
