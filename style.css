@@ -1,3 +1,4 @@
+/* Common styles for all screen sizes */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -9,25 +10,7 @@ body {
     /* Breathing background animation */
 }
 
-/* For tablets */
-@media screen and (max-width: 768px) {
-    /* Adjust styles for tablet screens */
-    header, section, footer {
-        width: 100%;
-        margin-right: 0;
-    }
-    /* Other tablet-specific styles */
-}
-
-/* For mobile devices */
-@media screen and (max-width: 480px) {
-    /* Adjust styles for mobile screens */
-    header, section, footer {
-        padding: 10px;
-    }
-    /* Other mobile-specific styles */
-}
-
+/* Header styles */
 header {
     background-color: #87cefa;
     /* Light Sky Blue */
@@ -35,8 +18,10 @@ header {
     text-align: center;
     border: 5px solid #4169e1;
     /* Thick border for header */
+    /* Add Hover-Responsive Logo animation here */
 }
 
+/* Heading styles */
 h1,
 h2,
 h3,
@@ -47,7 +32,7 @@ h6 {
     /* Royal Blue */
 }
 
-
+/* Section styles */
 section {
     margin: 20px;
     background-color: #f0f8ff;
@@ -60,26 +45,29 @@ section {
     width: 45%;
     box-sizing: border-box;
     margin-right: 20px;
+    /* Apply animations to sections */
     animation: fadeIn 1s ease-in-out, flowingRGBBorder 3s linear infinite;
     /* Flowing RGB border */
+    /* Add other animations as needed */
 }
 
+/* Unordered list styles */
 ul {
     list-style-type: none;
     padding: 0;
 }
 
+/* Iframe styles */
 iframe {
     width: 100%;
     height: 400px;
     border: 5px solid #4169e1;
     /* Thick border for iframes */
     border-radius: 10px;
-    animation: flowingRGBBorder 3s linear infinite;
-    /* Flowing RGB border */
+    /* Add iframe animation here */
 }
 
-/* Vision Section Styles */
+/* Vision Section styles */
 #vision-section {
     text-align: center;
     background-color: #2494E4;
@@ -93,8 +81,7 @@ iframe {
     margin-bottom: 20px;
     color: #fff;
     /* White Text */
-    animation: flowingRGBBorder 3s linear infinite;
-    /* Flowing RGB border */
+    /* Add other animations as needed */
 }
 
 /* Keyframes for Animation */
@@ -108,6 +95,7 @@ iframe {
     }
 }
 
+/* Breathing Background Animation */
 @keyframes breathingBackground {
 
     0%,
@@ -128,20 +116,101 @@ iframe {
     }
 }
 
+/* Flowing RGB Border Animation */
 @keyframes flowingRGBBorder {
     0% {
         border-color: red;
     }
 
-    33% {
+    25% {
         border-color: green;
     }
 
-    66% {
+    50% {
         border-color: blue;
+    }
+
+    75% {
+        border-color: yellow;
     }
 
     100% {
         border-color: red;
+    }
+}
+
+/* Add other animations here */
+
+/* Add 15 animation classes */
+.animate-header {
+    animation: fadeInDown 2s ease-in-out;
+}
+
+.animate-fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.animate-slide-in-right {
+    animation: slideInRight 1s ease-in-out;
+}
+
+.animate-zoom-in {
+    animation: zoomIn 1.5s ease-in-out;
+}
+
+.animate-flip {
+    animation: flipInY 2s ease-in-out;
+}
+
+.animate-rotate {
+    animation: rotateIn 2s ease-in-out;
+}
+
+.animate-bounce {
+    animation: bounceIn 2s ease-in-out;
+}
+
+.animate-pulse {
+    animation: pulse 2s infinite;
+}
+
+.animate-swing {
+    animation: swing 2s ease-in-out;
+}
+
+.animate-jello {
+    animation: jello 2s ease-in-out;
+}
+
+.animate-shake {
+    animation: shake 2s ease-in-out;
+}
+
+/* Media query for iPhones */
+@media (max-width: 600px) {
+
+    /* Adjustments for smaller screens (e.g., iPhone) */
+    body {
+        font-size: 14px;
+        /* Adjust font size for readability on small screens */
+    }
+
+    header {
+        padding: 10px;
+        /* Reduce header padding */
+    }
+
+    section {
+        width: 100%;
+        /* Make sections full width on small screens */
+        margin: 10px 0;
+        /* Adjust margin for sections */
+        padding: 10px;
+        /* Adjust padding for sections */
+    }
+
+    iframe {
+        height: 300px;
+        /* Reduce iframe height for smaller screens */
     }
 }
