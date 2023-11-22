@@ -1,0 +1,127 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    /* Black background */
+    color: #333;
+    animation: breathingBackground 10s ease-in-out infinite;
+    /* Breathing background animation */
+}
+
+header {
+    background-color: #87cefa;
+    /* Light Sky Blue */
+    padding: 20px;
+    text-align: center;
+    border: 5px solid #4169e1;
+    /* Thick border for header */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #4169e1;
+    /* Royal Blue */
+}
+
+section {
+    margin: 20px;
+    background-color: #f0f8ff;
+    /* Alice Blue */
+    padding: 20px;
+    border-radius: 10px;
+    border: 5px solid #4169e1;
+    /* Thick border for sections */
+    display: inline-block;
+    width: 45%;
+    box-sizing: border-box;
+    margin-right: 20px;
+    animation: fadeIn 1s ease-in-out, flowingRGBBorder 3s linear infinite;
+    /* Flowing RGB border */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+    border: 5px solid #4169e1;
+    /* Thick border for iframes */
+    border-radius: 10px;
+    animation: flowingRGBBorder 3s linear infinite;
+    /* Flowing RGB border */
+}
+
+/* Vision Section Styles */
+#vision-section {
+    text-align: center;
+    background-color: #2494E4;
+    /* CARTIER Blue Background */
+    padding: 20px;
+    border-radius: 10px;
+    border: 5px solid #99DFB2;
+    /* Thick border for vision section */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    /* Box Shadow for Effect */
+    margin-bottom: 20px;
+    color: #fff;
+    /* White Text */
+    animation: flowingRGBBorder 3s linear infinite;
+    /* Flowing RGB border */
+}
+
+/* Keyframes for Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes breathingBackground {
+
+    0%,
+    100% {
+        background-color: #0c0c0c;
+        /* Light Sky Blue */
+    }
+
+    25%,
+    75% {
+        background-color: #add8e6;
+        /* Baby Blue */
+    }
+
+    50% {
+        background-color: #f0f8ff;
+        /* Alice Blue */
+    }
+}
+
+@keyframes flowingRGBBorder {
+    0% {
+        border-color: red;
+    }
+
+    33% {
+        border-color: green;
+    }
+
+    66% {
+        border-color: blue;
+    }
+
+    100% {
+        border-color: red;
+    }
+}
